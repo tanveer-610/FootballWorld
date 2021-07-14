@@ -1,0 +1,490 @@
+/* ---------------------------------------------------------------
+                              utilities
+------------------------------------------------------------------ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ---------------------------------------------------------------
+                         Header starts here
+------------------------------------------------------------------ */
+header{
+    background-color: #2D25A0;
+    padding-top: 42px;
+    width: 100%;
+    height: 100vh;
+}
+header:hover .event-logo img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+header:hover{
+    background-color: black;
+}
+
+
+
+/* ---------------------------------------------------------------
+                         navbar starts here
+------------------------------------------------------------------ */
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.shortcut-links{
+    margin-left: 145px;
+}
+.shortcut-links ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.shortcut-links ul li a{
+    padding-left: 18px;
+    font-size: 16px;   
+    transition: 0.5s; 
+}
+.shortcut-links ul li a:hover{
+    color: tomato;  
+    
+}
+.bar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menubar{
+    display: none;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+}
+.login-button{
+    margin-right: 120px;
+}
+.btn{
+    width: 123px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+}
+.btn p{
+    color: white;
+    font-size: 1.2rem;
+}
+.signin{
+    padding-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------------
+                         Event style starts here
+------------------------------------------------------------------ */
+.container{
+    display: flex; 
+    padding-top: 3%;    
+}
+.event-name{
+    color: #FFFFFF;
+    margin-left: 156px;
+    margin-right: 102px;
+    margin-top: 100px;
+    width: 50%;
+    flex: 1;
+}
+
+.event-name h1{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+} 
+.btn2{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+    margin-top: 27px;
+}
+.btn2 p{
+    color: white;
+    font-size: 1.2rem;
+}
+.event-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;   
+}
+.event-logo img{
+    width: 90%;
+    padding-top: 10px;
+    transition: 1.5s;
+}
+
+/* ---------------------------------------------------------------
+                         Players info style starts here
+------------------------------------------------------------------ */
+.players-info{
+    margin-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    justify-content: space-around;
+    margin: 0 15%;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: 1.2s;
+    cursor: pointer;
+}
+.player-img img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.player-title h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #18191F;
+}
+.player-title p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+.player:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------------------------------------------------------------
+                         Highlights style starts here
+------------------------------------------------------------------ */
+.highlights{
+    margin-top: 85px;
+    box-sizing: border-box;
+}
+.match-highlights{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin: 0 15%;
+} 
+.highlights-info{
+    margin-right: 66px;
+}
+.highlights-info h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;    
+    color: #0A0826;
+    margin-top: 70px;
+    margin-bottom: 8px;
+}
+#highlight-title{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+.highlights-thumbnail img{
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+}
+/* ---------------------------------------------------------------
+                         Team performance style starts here
+------------------------------------------------------------------ */
+.conmebol-team-performance{
+    padding-top: 5%;
+    width: 80%;
+    margin: 0 auto;
+}
+.performance{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 5%;
+}
+.performance h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid lightpink;
+    width: 100%;
+}
+th{
+    padding: 1px 2px;  
+    background-color: lightpink;
+    
+}
+td:nth-child(2n+1){
+    background-color: lightgray;
+}
+td{
+    padding: 5px 3px;    
+}
+.teamname{
+    text-align: left;
+}
+
+/* ---------------------------------------------------------------
+                         Team logo style starts here
+------------------------------------------------------------------ */
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 2px 2px 2px 4px rgb(105, 104, 104);
+}
+.team-container img{
+    width: 100%;
+}
+.team-container h1{
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------
+                         official partner style starts here
+------------------------------------------------------------------ */
+.partnerr{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#partner{
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Niconne', cursive;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.partners-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 8px 3px 6px 10px lightgray;
+}
+.logo-div img{
+    width: 100%;
+}
+/* ---------------------------------------------------------------
+                         Footer style starts here
+------------------------------------------------------------------ */
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+.footerinfo{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-logo img{
+    width: 100%;   
+}
+.social-media-icon{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.social-media-icon a{
+    margin:0 3px;
+}
+.social-media-icon a .fab{
+    color: #969BAB;    
+    background-color: rgba(150,155,171,0.2);
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: 1s transform;
+}
+.social-media-icon a .fab:hover{
+    background-color: tomato;
+    box-shadow: 2px 2px 1px 2px white;
+    color: white;
+    transform: rotate(360deg);
+}
+.copyright{
+    font-size: 18px;
+    line-height: 24px;
+}
+/* ---------------------------------------------------------------
+                         mobile style starts here
+------------------------------------------------------------------ */
+@media only screen and (max-width:668px) {
+    header{
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .event-name{
+        width: 50%;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .event-name h1{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #FFFFFF;
+        width: 100%;
+    }
+    .event-logo{
+        width: 100%;
+        margin-top: 2%;
+    }
+    .players{
+        grid-template-columns: repeat(1,330px);
+        margin: 0 15%;
+    }
+    
+    .highlights-info{
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .highlights-info h1{
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 40px;
+        
+    }
+    .match-highlights{
+        grid-template-columns: 1fr;
+        grid-row-gap: 16px;
+    } 
+    .performance{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 5%;
+    }
+    table{
+        width: 100%;
+    }
+    .team-container{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20%;
+    }
+    .team-container img{
+        width: 100%;
+    }
+    .shortcut-links{
+        display: none;
+    }
+    .bar{
+        width: 100%;
+    }
+    .menubar{
+        display: block;
+    }
+    .login-button{
+        margin-right: 15px;
+    }
+
+}
+/* ---------------------------------------------------------------
+                         tablet style starts here
+------------------------------------------------------------------ */
+@media only screen and (max-width:992px) {
+   
+    header{
+        height: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .event-name{
+        width: 60%;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .event-name h1{
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 50px;
+        color: #FFFFFF;
+        width: 100%;
+    }
+    .event-logo{
+        width: 80%;
+        margin-top: 2%;
+        padding-left: 60px;
+    }
+    
+    .players{
+        grid-template-columns: repeat(2,330px);
+        margin: 0 15%;
+        grid-gap: 15px 15px;
+    }
+    
+    .highlights-info{
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 100%;
+    }
+    .highlights-info h1{
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 40px;
+        
+    }
+    .match-highlights{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+    } 
+    .performance{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 5%;
+    }
+    table{
+        width: 100%;
+    }
+    .team-container{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20%;
+    }
+    .team-container img{
+        width: 100%;
+    }
+    .shortcut-links{
+        display: none;
+    }
+    .bar{
+        width: 100%;
+    }
+    .menubar{
+        display: block;
+    }
+    .login-button{
+        margin-right: 15px;
+    }
+    
+}
