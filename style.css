@@ -152,11 +152,11 @@ header:hover{
 }
 .players{
     display: grid;
-    grid-template-columns: repeat(3,330px);
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-around;
     margin: 0 15%;
-    grid-row-gap: 25px;
-    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
 
 }
 .player{
@@ -368,7 +368,7 @@ footer{
         margin-top: 2%;
     }
     .players{
-        grid-template-columns: repeat(1,330px);
+        grid-template-columns: repeat(1,1fr);
         margin: 0 15%;
     }
     
@@ -422,7 +422,7 @@ footer{
 /* ---------------------------------------------------------------
                          tablet style starts here
 ------------------------------------------------------------------ */
-@media only screen and (max-width:992px) {
+@media only screen and (min-width:668px) and (max-width:992px) {
    
     header{
         height: auto;
@@ -449,7 +449,7 @@ footer{
     }
     
     .players{
-        grid-template-columns: repeat(2,330px);
+        grid-template-columns: repeat(2,1fr);
         margin: 0 15%;
         grid-gap: 15px 15px;
     }
