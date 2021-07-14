@@ -417,7 +417,10 @@ footer{
     .login-button{
         margin-right: 15px;
     }
-
+    .copyright{
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 /* ---------------------------------------------------------------
                          tablet style starts here
